@@ -12,63 +12,17 @@ import java.util.ArrayList;
  * @author Estudiante
  */
 public class Carro {
-    private String marca;
-    private int anyo;
-    private String modelo;
-    
     private Llanta[] llantas;
     private Motor motor;
     private Chasis chasis;
-
-    public Carro(String marca, int anyo, String modelo) {
-        this.llantas = new Llanta[4];
-        this.marca = marca;
-        this.anyo = anyo;
-        this.modelo = modelo;
-    }
-
-    public Carro(String marca, int anyo, String modelo, Llanta[] llantas, Motor motor) {
-        this.llantas = new Llanta[4];
-        this.marca = marca;
-        this.anyo = anyo;
-        this.modelo = modelo;
-        this.llantas = llantas;
-        this.motor = motor;
-    }
-    
     public Carro() {
         llantas = new Llanta[4];
     }
 
-    public Carro(Llanta[] llantas, Motor motor, Chasis chasis, String marca) {
+    public Carro(Llanta[] llantas, Motor motor, String marca) {
         this.llantas = llantas;
         this.motor = motor;
-        this.chasis = chasis;
-        this.marca = marca;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public int getAnyo() {
-        return anyo;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public void setAnyo(int anyo) {
-        this.anyo = anyo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+        this.chasis = new Chasis();
     }
 
     public void setLlantas(Llanta[] llantas) {

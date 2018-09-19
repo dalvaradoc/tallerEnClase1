@@ -22,10 +22,8 @@ public class EjercicioRelaciones1 {
         
         Motor motor = new Motor();
         
-        Chasis chasis = new Chasis();
-        
-        Carro carro1 = new Carro(llantas, motor, chasis, "Chevrolet");
-        Carro carro2 = new Carro(llantas, motor, chasis, "Renault");
+        Carro carro1 = new Carro(llantas, motor, "Chevrolet");
+        Carro carro2 = new Carro(llantas, motor, "Renault");
         
         ArrayList carros = new ArrayList();
         

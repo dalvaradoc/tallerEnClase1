@@ -24,7 +24,7 @@ public class Persona {
     
     public void showCarros () {
         for (int i = 0; i < carros.size(); i++){ 
-            System.out.println("Carro " + (i+1) + ": " + carros.get(i).getMarca());
+            System.out.println("Carro " + i);
         }
     }
 }

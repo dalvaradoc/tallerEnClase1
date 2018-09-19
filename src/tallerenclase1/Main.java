@@ -15,8 +15,10 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("Output del ejercicio 1 de relaciones:");
         EjercicioRelaciones1 ej1 = new EjercicioRelaciones1();
-        
+        System.out.println("Output del ejercicio 1 de relaciones:");
+        EjercicioRelaciones2 ej2 = new EjercicioRelaciones2();
     }
     
 }
